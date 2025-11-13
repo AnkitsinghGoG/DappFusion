@@ -8,7 +8,7 @@ async function main() {
 
   if (fs.existsSync(configPath)) {
     config = JSON.parse(fs.readFileSync(configPath, "utf8"));
-  }
+   }
 
   console.log("=====================================");
   console.log(`🚀 Deploying Project: DappFusion`);
