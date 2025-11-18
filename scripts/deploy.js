@@ -7,13 +7,13 @@ async function main() {
   let config = {};
 
   if (fs.existsSync(configPath)) {
-    config = JSON.parse(fs.readFileSync(configPath, "utf8"));
+    config = JSON.parse(fs.readFileSync(configPath,"utf8"));
     }
 
-  console.log("======================================");
+  console.log("=====================================");
   console.log(`🚀 Deploying Project: DappFusion`);
   console.log(`🌐 Network: ${hre.network.name}`);
-  console.log("======================================\n");
+  console.log("=====================================\n");
 
   await hre.run("compile");
 
