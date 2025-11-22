@@ -33,7 +33,7 @@ async function main() {
   config.deploymentDate = new Date().toISOString();
 
   fs.writeFileSync(configPath, JSON.stringify(config, null, 2));
-  console.log("\n📝 Deployment details saved to deploy.json\n");
+  console.log("\n📝 Deployment details saved to deploy.json \n");
 }
 
 main()
