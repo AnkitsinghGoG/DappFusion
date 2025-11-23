@@ -4,7 +4,7 @@ const path = require("path");
 
 async function main() {
   const configPath =path.join(__dirname, "../deploy.json");
-  let config = {};
+  let config ={};
 
   if (fs.existsSync(configPath)) {
     config = JSON.parse(fs.readFileSync(configPath,"utf8"));
