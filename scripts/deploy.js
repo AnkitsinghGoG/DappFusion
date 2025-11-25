@@ -17,7 +17,6 @@ async function main() {
 
   await hre.run("compile");
 
-
   const ContractFactory = await hre.ethers.getContractFactory("DappFusion");
   const contract = await ContractFactory.deploy();
 
